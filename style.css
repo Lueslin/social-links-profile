@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font: "Inter", sans-serif;
+  --regular: 400;
+  --semibold: 600;
+  --bold: 700;
+  --green: #C5F82A;
+  --white: #FFFFFF;
+  --gray: #333333;
+  --graymedium:#1F1F1F;
+  --graystrong:#141414;
+}
+
+body {
+  font-family: var(--font);
+  font-weight: var(--regular);
+  background-color: var(--graystrong);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 24px;
+  flex-direction: column;
+}
+
+.card {
+  background-color: var(--graymedium);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 330px;
+  max-width: 100%;
+  padding: 25px;
+  margin-bottom: 120px;
+  border-radius: 10px;
+}
+
+.jessica-image {
+  margin-top: 7px;
+  margin-bottom: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.jessica-image img{
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+h1{
+  color: var(--white);
+  font-weight: var(--semibold);
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  margin-top: 17px;
+}
+
+span{
+  color: var(--green);
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-weight: var(--semibold);
+  font-size: 13px;
+}
+
+p{
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: var(--regular);
+  margin-top: 25px;
+  margin-bottom: -7px;
+}
+
+.profile_links{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  margin-top: 30px;
+}
+
+.profile_links li{
+  display: flex;
+  justify-content: center;
+  background-color: var(--gray);
+  width: 260px;
+  padding: 12px;
+  border-radius: 7px;
+  font-size: 13px; 
+  font-weight: var(--semibold);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.profile_links li a{
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  
+}
+
+.profile_links li:hover a{
+  color: var(--graystrong)
+}
+
+.profile_links li:hover{
+  background-color: var(--green);
+}
+
+.attribution{
+  
+  color: var(--white)
+}
+
+.attribution a{
+  color:var(--green)
+}
